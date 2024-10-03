@@ -1,12 +1,16 @@
+from ariadne.asgi import GraphQL
 from fastapi import FastAPI
 import uvicorn
 
+from graphql_utils.resolvers import schema
 from logger import get_logger
+
 
 LOGGER = get_logger("gateway:main.py")
 
 app = FastAPI()
-
+graphql_app = GraphQL(schema, debug=True)
+app.mount("/graphql", graphql_app)
 
 @app.get("/")
 async def get():

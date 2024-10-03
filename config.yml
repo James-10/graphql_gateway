@@ -1,3 +1,6 @@
 registered_endpoints:
-  score_model1:
-    endpoint: http://127.0.0.1:8080/model1
+  scoremodel1:
+    endpoint: http://127.0.0.1:8080/model1/
+  expertmodel:
+    endpoint: http://127.0.0.1:9000/score/
+

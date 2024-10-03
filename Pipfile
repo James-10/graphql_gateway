@@ -10,6 +10,7 @@ sqlalchemy = "*"
 uvicorn = "*"
 pyyaml = "*"
 python-dotenv = "*"
+requests = "*"
 
 [dev-packages]
 
